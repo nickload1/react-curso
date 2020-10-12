@@ -1,9 +1,18 @@
 import React from 'react'
-export default function() {
+
+export default function ComParametro(props) {
+        const status = props.nota >= 7 ? 'Aprovado' : 'Reprovador'
     return (
         <div>
-            <h2>Titulo</h2>
-            <h3>Subtitulo</h3>    
+            <h2>{ props.titulo }</h2>
+            <p>
+                <strong> { props.aluno } </strong>
+                 tem nota 
+                <strong> { props.nota } </strong>
+                e está
+                <strong> { status } </strong>!
+
+            </p>
 
         </div>
     )
