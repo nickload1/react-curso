@@ -10,9 +10,9 @@ ReactDOM.render(
 
     <Primeiro></Primeiro>
     <ComParametro 
-        titulo="Segundo Componente" 
-        subtitulo="Muito legal!"></ComParametro>
-     
+        titulo="Situação do Aluno" 
+        aluno="Irineu Irinaves" 
+        nota={9.3}/>
     </div>,
     document.getElementById('root')
 )
